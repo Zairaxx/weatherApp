@@ -1,0 +1,76 @@
+body {
+    background-color:#DDD;
+}
+.container {
+    max-width:100vw;
+    height:auto;
+    border: 1px solid #000;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+}
+
+.main-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5em;
+    width:50%;
+    justify-content:center;
+}
+
+.forecast {
+    margin-top:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:5em;
+    margin-right:10em;
+    justify-content:center;
+}
+#date-0, #temp-0 {
+    padding: 20px;
+    font-size:50px;
+    text-align:center;
+}
+
+#icon-0 {
+    max-width:100px;
+    height: auto;
+}
+.weather-date, .weather-temp {
+    text-align:center;
+}
+
+.weather-temp {
+    margin-bottom:0;
+}
+.weather-icon {
+    max-width: 50px;
+}
+.weather-date:not(:last-of-type) {
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom: 1px solid black;
+}
+
+.main-weather img {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+.main-weather {
+    border-right:2px solid #000;
+}
+
+.appTitle   {
+    text-align:center;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+}
+
